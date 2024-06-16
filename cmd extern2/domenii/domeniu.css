@@ -1,0 +1,169 @@
+body {
+  background-color: white;
+}
+
+.header {
+  background-color: #243665;
+}
+
+.logo {
+  width: 100px;
+}
+.container-mare {
+  background-color: whitesmoke;
+
+  padding-top: 10rem;
+}
+
+.container-mic {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1600px;
+}
+
+.container-stanga {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  transition: 0.5s;
+}
+
+.container-stanga h2 {
+  font-size: 40px;
+  color: #243665;
+  transition: 0.5s;
+}
+
+.container-stanga p {
+  color: #243665;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.container-dreapta {
+  width: 60%;
+  max-width: 1600px;
+}
+.container-dreapta img{
+  width: 550px;
+  border-radius: 20px;
+  margin-left: 10rem;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.container-dreapta img:hover{
+width: 530px;
+margin-left: 13.3rem;
+opacity: 1;
+transition: 0.5s;
+}
+
+.container-dreapta-cross {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  width: 60%;
+  max-width: 749px;
+  margin-left: 8rem;
+  transition: 0.5s;
+}
+
+
+
+
+.container-dreapta-cross img {
+  width: 250px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: 0.5s;
+  padding: 6px;
+}
+
+.container-dreapta-cross:hover img{
+  width: 300px;
+  height: auto;
+  transition: 0.5s;
+
+}
+
+.container-altscris {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1600px;
+  margin: auto;
+  justify-content: center;
+}
+
+.container-altscris h2 {
+  /* margin-top: 1rem; */
+  font-size: 35px;
+  margin-bottom: 2rem;
+  color: #243665;
+  margin-top: 3%;
+}
+.container-altscris p {
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.qa{
+  
+  background-color: whitesmoke;
+  max-width: 1600px;
+  transition: 0.5s;
+  margin-top: 8rem;
+  border-radius: 20px;
+  /* justify-content: center; */
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  animation: 0.5s ease-out 0s 1 slideInRight;
+  color: #243665;
+  text-align: center;
+  box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1300px) {
+  .container-altscris {
+    text-align: center !important;
+  }
+  .container-altscris p {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .container-altscris h2 {
+    text-align: center !important;
+  }
+  .container-mic {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-stanga {
+    width: auto;
+    max-width: 1600px;
+  }
+
+  .container-dreapta {
+    width: auto;
+    max-width: 1600px;
+    margin-top: 10%;
+  }
+
+  .container-dreapta img {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

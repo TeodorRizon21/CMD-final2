@@ -1,0 +1,347 @@
+body {
+  background-color: #243665;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.container-valori {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+  position: relative; /* Add this to position the gradient overlay */
+  z-index: 1; /* Add this to ensure the gradient overlay is above other content */
+}
+
+.container-valori {
+  top: 0; /* Start from the top */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(36, 54, 101, 0.7),
+      rgba(47, 154, 204, 0.7)
+    ),
+    url("image/valoare.jpeg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.valori-rand {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-top: 10px;
+}
+.valori-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.valori-item img {
+  width: 100px;
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.valori-item h2 {
+  color: whitesmoke;
+  padding-top: 10px;
+}
+
+.valori-item .titlu {
+  text-align: center;
+  font-size: 52px;
+}
+
+.despre {
+  padding-top: 8rem;
+  background-image: linear-gradient(
+    to top,
+    rgb(36, 54, 101),
+    rgb(47, 154, 204)
+  );
+}
+
+.despre h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 52px;
+  margin-top: 40px;
+  margin-bottom: 3rem;
+}
+.poveste {
+  width: 90%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  padding-bottom: 10rem;
+  gap: 3rem;
+  align-items: center;
+}
+
+.container-imagine img {
+  width: 600px;
+  padding: 0 40px;
+  border-radius: 20%;
+}
+
+.container-text {
+  align-content: center;
+}
+
+.container-text p {
+  text-align: left;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.scroller {
+  overflow: hidden;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-top: 60px;
+  /* outline: 3px #243665; */
+}
+
+.scroller h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+
+.parteneri {
+  margin-top: 1.5rem;
+  padding-block: 1rem;
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.parteneri img {
+  border-radius: 10px;
+  max-width: 100px;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .parteneri {
+  width: max-content;
+  flex-wrap: wrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-30% - 1.5rem));
+  }
+}
+
+.slideshow-container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.mySlides {
+  display: none;
+  max-height: 533.94px;
+
+  overflow: hidden;
+}
+
+.mySlides .video {
+  width: 100%;
+  height: 100%;
+  transform: translate(0%, -30%);
+}
+
+.mySlides .playBtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  bottom: 5%;
+  left: 5%;
+}
+
+.mySlides .pauseBtn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  bottom: 5%;
+  left: 5%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .valori-rand {
+    padding: 10px;
+  }
+
+  .valori-item img {
+    width: 50px;
+  }
+  .valori-item h2 {
+    font-size: 14px;
+  }
+  .valori-item .titlu {
+    font-size: 32px;
+  }
+
+  .despre {
+    padding-top: 4rem;
+  }
+  .despre h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+
+  .poveste {
+    flex-direction: column;
+  }
+
+  .container-imagine {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .container-imagine img {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0%;
+  }
+
+  .container-text {
+    padding-top: 2rem;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-text p {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mySlides .video {
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .valori-rand {
+    padding: 10px;
+  }
+
+  .valori-item img {
+    width: 50px;
+  }
+  .valori-item h2 {
+    font-size: 14px;
+  }
+  .valori-item .titlu {
+    font-size: 32px;
+  }
+
+  .despre {
+    padding-top: 4rem;
+  }
+  .despre h1 {
+    font-size: 32px;
+  }
+
+  .poveste {
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 5rem;
+  }
+
+  .container-imagine img {
+    width: 300px;
+  }
+
+  .container-text {
+    padding-top: 20px;
+    width: 90%;
+  }
+}

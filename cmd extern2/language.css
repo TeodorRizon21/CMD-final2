@@ -1,0 +1,89 @@
+.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-right: 1rem;
+  display: none;
+}
+
+.selected-language {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  font-size: 20px;
+  color: white;
+}
+
+.selected-language:before {
+  content: "";
+  display: block;
+}
+
+.language ul {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  box-shadow: 0px 1px 10px rgba (0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  cursor: pointer;
+}
+
+.language ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.language ul li a {
+  width: 140px;
+  display: flex;
+  justify-content: left;
+  padding: 5px 10px;
+}
+
+.language ul li a img {
+  margin-right: 1rem;
+}
+
+.tara-limba {
+  width: 40px;
+  height: 25px;
+  margin: 0;
+}
+
+.language ul li a:hover {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.language:hover ul {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .language {
+    width: 50px;
+    margin-right: 4em;
+  }
+
+  .selected-language {
+    font-size: 0px;
+    width: auto;
+
+    justify-content: right;
+  }
+  .language ul {
+    left: auto;
+    right: 0;
+  }
+}

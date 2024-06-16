@@ -1,0 +1,101 @@
+.header {
+  background-color: #243665;
+}
+
+#catalog-titlu {
+  margin-top: 10rem;
+  font-size: 36px;
+  font-weight: 350;
+  text-align: center;
+}
+
+.container-imagine img {
+  width: 350px;
+  object-fit: cover;
+}
+
+.container-fundal {
+  width: 100vw;
+}
+
+.container-domenii {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  gap: 2em;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+}
+
+.container-imagine {
+  width: 100%;
+  height: 35%;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.poza-fundal {
+  position: absolute;
+  width: 400px;
+  opacity: 0.4;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+.domeniu {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(50px);
+  width: 300px;
+  height: 400px;
+  opacity: 0.9;
+  box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.7);
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease forwards;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+    bottom: -100px;
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+    bottom: 0;
+  }
+}
+
+.domeniu:hover {
+  width: 290px;
+  height: 390px;
+  transition: 0.5s;
+}
+
+.domeniu h2 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.domeniu p {
+  font-size: 14px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 240px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.container-domenii a {
+  text-decoration: none;
+  color: black;
+}

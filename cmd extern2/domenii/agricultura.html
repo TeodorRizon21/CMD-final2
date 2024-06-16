@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Extern</title>
+    <link rel="icon" type="image/x-icon" href="../image/cmdexternal logo.png">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="domeniu.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../language.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+     
+  <header class="header" id="header">
+    <a href="../index.html"><img src="../image/logo-no-background.png" class="logo"></a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+
+    </label>
+
+    <nav class="navbar">
+    
+        <a id="acasa-navbar" href="../index.html" style="--i:0;">Acasa</a>
+        <a id="desprenoi-navbar" href="../despre_noi.html" style="--i:1;">Despre Noi</a>
+        <a id="domenii-navbar" href="../domenii.html" style="--i:2;">Domenii</a>
+        <a id="cereoferta-navbar" href="../cere-o-oferta.html" style="--i:3;">Cere o oferta!</a> 
+        <a id="contact-navbar" href="../contact.html" style="--i:4;">Contact</a>
+        
+    
+    </nav>
+    
+    <div class="language">
+      <img class="tara-limba" id="selected-flag" src="../image/tari/rom.jpg">
+      <div class="selected-language" id="selected-language">
+       Romana
+      </div>
+      <ul>
+        <li>
+          <a id="ro" onclick="
+            languageSelector('ro');
+
+            " value="ro" class="de">
+            <img class="tara-limba" src="../image/tari/rom.jpg">
+            Romana</a>
+        </li>
+        <li>
+          <a id="en" onclick="
+             languageSelector('en');
+            " value="en" class="en">
+            <img class="tara-limba" src="../image/tari/uk.png">
+            English</a>
+        </li>
+        <li>
+          <a class="fr">French</a>
+        </li>
+        <li>
+          <a class="ae">Arabic</a>
+        </li>
+      </ul>
+      
+    </div>
+    
+
+</header>
+
+
+        
+        
+        <main>
+
+           
+          <div class="container-mare">
+            <div class="container-mic">
+                <div class="container-stanga">
+                    <h2>Agricultura</h2>
+                    <p> Furnizăm lucrători agricoli și experți în agricultură, inclusiv ingineri agronomi și mecanici agricoli, pentru a sprijini exploatațiile agricole și procesul de producție agricolă în întreaga Europa.
+
+                    </p>
+                </div>
+
+                <div class="container-dreapta">
+                    <img src="../image/img/agricultura.jpg">
+
+                </div>
+            </div>
+            <div class="container-altscris">
+
+              <div class="qa">
+                <h2>Cum asiguram furnizarea unor muncitori calificați și experimentați?</h2>
+                 <p style="text-align: center;">Ne concentrăm pe identificarea și evaluarea candidaților cu experiență în
+                  domeniul agriculturii și cunoștințe specifice ale acestuia. Colaborăm
+                  îndeaproape cu specialiștii din compania ta pentru a înțelege cerințele precise și
+                  pentru a oferi soluții de recrutare adaptate nevoilor tale.</p>
+              </div>
+              <div class="qa">
+                <h2 >Care este procesul de screening și evaluare a candidaților?</h2>
+                   <p style="text-align: center;">În domeniul agriculturii, căutăm muncitori cu abilități excelente de lucru în
+                    echipă, rezistență la efort fizic și cunoștințe tehnice solide în domeniul
+                    agricol. Ne angajăm să identificăm candidați care să îndeplinească
+                    cerințele și să contribuie la succesul activităților pe toată durata șederii lor în compania ta.</p>
+              </div>
+              <div class="qa">
+                <h2>Ce garanții aveti că vom oferi personal calificat în timp util pentru proiecte?</h2>
+                  <p style="text-align: center;">Ne angajăm să furnizăm personal agricol care să fie potrivit pentru nevoile
+                    companiei tale și capabil să se adapteze la diferitele sarcini și condiții de
+                    lucru. Efectuăm evaluări atente și oferim suport continuu pentru a asigura
+                    că personalul furnizat este pregătit să facă față cu succes cerințelor din domeniu.</p>
+              </div>
+              </div>
+            
+        </div>
+
+
+        </main>
+
+
+          <div class="container-catalog">
+
+            <div class="catalog">
+              <div class="catalog-scris">
+                <h2 id="catalog-titlu">Domeniile pentru care<span style="font-weight: 700;"> RECRUTAM</span></h2>
+              </div>
+              <div class="container-domenii">
+              
+                <a href="constructii.html"> 
+                  <div class="container-domeniu">
+                    <img src="../image/img/constructii.jpg" class="poza-fundal">
+                    <div class="container-imagine">
+                      <img src="../image/img/constructii.jpg">
+                    </div>
+                    <h2 id="titlu-domeniu1">Constructii</h2>
+                    <p id="paragraf-domeniu1" >Furnizăm echipe de constructori specializați, inclusiv zidari, electricieni și dulgheri, pentru a susține proiectele de construcții din UE.
+                    </p>
+                </div> </a>
+
+              <a href="fabrici.html">
+                  <div class="container-domeniu">
+                    <img src="../image/img/fabrici.jpg" class="poza-fundal">
+                    <div class="container-imagine">
+                      <img src="../image/img/fabrici.jpg">
+                    </div>
+                    <h2 id="titlu-domeniu2">Fabrici</h2>
+                    <p>Oferim personal calificat pentru fabrici, precum operatori de mașini, tehnicieni de mentenanță și muncitori de producție, pentru a sprijini operațiunile de fabricație
+  
+                    </p>
+                </div>
+              </a>
+  
+              <a href="fmcg.html">
+                 <div class="container-domeniu">
+                  <img src="../image/img/fmcg.jpg" class="poza-fundal">
+                  <div class="container-imagine">
+                    <img src="../image/img/fmcg.jpg">
+                  </div>
+                  <h2 id="titlu-domeniu3">FMCG</h2>
+                  <p>Oferim personal specializat în industria FMCG, inclusiv operatori de linie de producție, muncitori pentru ambalare și personal pentru logistică, pentru a satisface cerințele producției și distribuției rapide.
+  
+                  </p>
+                </div>
+              </a> 
+             
+              <a href="horeca.html">
+                  <div class="container-domeniu">
+                    <img src="../image/img/horeca.jpg" class="poza-fundal">
+                    <div class="container-imagine">
+                      <img src="../image/img/horeca.jpg">
+                    </div>
+                    <h2 id="titlu-domeniu4">HoReCa</h2>
+                    <p>Furnizăm angajați pentru industria HoReCa, inclusiv bucătari, ospătari și barmani, pentru a servi în hoteluri, restaurante și catering-uri din întreaga UE.
+  
+                    </p>
+                </div>
+              </a>
+              
+        
+                
+              <a href="ferme.html">
+                <div class="container-domeniu">
+                  <img src="../image/img/ferme.png" class="poza-fundal">
+                  <div class="container-imagine">
+                    <img src="../image/img/ferme.png">
+                  </div>
+                  <h2 id="titlu-domeniu6">Ferme</h2>
+                  <p>Furnizăm lucrători agricoli și culegători sezonieri pentru fermele din UE, asigurând mâna de lucru necesară pentru recoltare și întreținerea culturilor agricole.
+  
+                  </p>
+              </div>
+              </a>
+               
+              <a href="menaj.html">
+                <div class="container-domeniu">
+                  <img src="../image/img/menaj.jpg" class="poza-fundal">
+                  <div class="container-imagine">
+                    <img src="../image/img/menaj.jpg">
+                  </div>
+                  <h2 id="titlu-domeniu7">Menaj</h2>
+                  <p>
+                    Cautam oameni calificati in menaj profesional pentru locuințe și spații comerciale, furnizând menajere calificate și experimentate
+  
+                  </p>
+              </div>
+              </a>
+               
+              <a href="babysitting.html">
+                <div class="container-domeniu">
+                  <img src="../image/img/baby.jpg" class="poza-fundal">
+                  <div class="container-imagine">
+                    <img src="../image/img/baby.jpg">
+                  </div>
+                  <h2 id="titlu-domeniu8">Babysitting</h2>
+                  <p>Selectam personal potrivit pentru babysitting, oferind bone și babysitteri cu experiență în îngrijirea și supravegherea copiilor de diferite vârste și nevoi, pentru a le oferi părinților liniștea și confortul necesar.
+  
+                  </p>
+              </div>
+              </a>
+                
+              <a href="ajutor-la-domiciliu.html">
+                <div class="container-domeniu">
+                  <img src="../image/img/ajdom.jpg" class="poza-fundal">
+                  <div class="container-imagine">
+                    <img src="../image/img/ajdom.jpg">
+                  </div>
+                  <h2 id="titlu-domeniu9">Ajutor la domiciliu</h2>
+                  <p>Alegem oameni potriviti domeniului de îngrijire la domiciliu pentru persoanele în vârstă sau cu dizabilități din întreaga Uniune Europeană, oferind asistență în activitățile zilnice 
+  
+                  </p>
+              </div>
+              </a>
+                
+              <a href="curierat.html">
+                <div class="container-domeniu">
+                  <img src="../image/img/curierat.jpg" class="poza-fundal">
+                  <div class="container-imagine">
+                    <img src="../image/img/curierat.jpg">
+                  </div>
+                  <h2 id="titlu-domeniu10">Curierat</h2>
+                  <p>Furnizăm curieri și șoferi de livrare pentru companiile de curierat din UE, asigurând distribuția eficientă a pachetelor și a coletelor în întreaga regiune.
+  
+                  </p>
+              </div>
+              </a>
+                
+              <a href="reciclare&salubritate.html">
+                <div class="container-domeniu">
+                  <img src="../image/img/reciclare.jpg" class="poza-fundal">
+                  <div class="container-imagine">
+                    <img src="../image/img/reciclare.jpg">
+                  </div>
+                  <h2 id="titlu-domeniu11">Reciclare</h2>
+                  <p>Oferim personal calificat pentru industria reciclării, inclusiv operatori de utilaje specifice, tehnicieni de mentenanță și ingineri de mediu, pentru a gestiona eficient procesul de reciclare și de gestionare a deșeurilor în UE.
+  
+                  </p>
+              </div>
+              </a>
+               
+              <a href="santiere-navale.html">
+                <div class="container-domeniu">
+                  <img src="../image/img/asntiere.jpg" class="poza-fundal">
+                  <div class="container-imagine">
+                    <img src="../image/img/asntiere.jpg">
+                  </div>
+                  <h2 id="titlu-domeniu12">Santiere navale</h2>
+                  <p>Oferim forță de muncă specializată pentru șantierele navale din UE, inclusiv sudori, lăcătuși naval și ingineri de construcții navale, pentru a susține construcția și reparația navelor.
+  
+                  </p>
+              </div>
+              </a>
+               
+  
+              </div>
+  
+              </div>
+  
+              </div>
+  
+
+              <footer>
+
+
+  
+                <div class="footerContainer">
+                
+                <div class="informatii-footer">
+              
+                  <div class="information-loc">
+                    <img src="img/phone.png" class="icon" alt="" />
+                    <p>+40 749 187 777</p>
+                </div>
+              
+                  <div class="information-loc">
+                    <img src="img/location.png" class="icon" alt="" />
+                    <p>Strada Ștefan Mihăileanu, nr 28C, Sector 2, București, România</p>
+                  </div>
+                
+                  </div>
+                
+                  <div class="socialIcons">
+            
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-tiktok"></i></a>
+                  
+                
+                  </div>
+                
+                  <div class="footerNav">
+                
+                    <ul>
+                      <li><a href="faq.html" >Întrebări frecvente</a></li>
+                      <li><a href="termeni.html" >Termeni și condiții</a></li>
+                      <li><a href="confidentialitate.html" >Confidențialitate</a> </li>
+                      <!-- <li><a href="cere-o-oferta.html" >Cere o ofertă!</a>
+                      <li><a href="contact.html">Contact</a></li> -->
+                
+                    </ul>
+                
+                    
+                
+                  </div>
+                
+                  
+                
+                </div>
+                
+                
+                <div class="footerBottom">
+                  <p>Copyright © CMD External Group. All rights reserved.</p>
+                
+                </div>
+                
+                
+                </footer>
+
+          <script src="../navbar.js"></script>
+          <script src="language-domeniu.js"></script>
+    
+</body>

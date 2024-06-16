@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMD Extern</title>
+    <link rel="icon" type="image/x-icon" href="image/cmdexternal logo.png">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="language.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+     
+        <header class="header" id="header">
+            <a href="index.html"><img src="image/logo-no-background.png" class="logo"></a>
+        
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+        
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+        
+            </label>
+        
+            <nav class="navbar">
+            
+                <a id="acasa-navbar" href="index.html" style="--i:0;">Acasa</a>
+                <a id="desprenoi-navbar" href="despre_noi.html" style="--i:1;">Despre Noi</a>
+                <a id="domenii-navbar" href="domenii.html" style="--i:2;">Domenii</a>
+                <a id="cereoferta-navbar" href="cere-o-oferta.html" style="--i:3;">Cere o oferta!</a> 
+                <a id="contact-navbar" href="contact.html" style="--i:4;">Contact</a>
+                
+            
+            </nav>
+            
+            <div class="language">
+              <img class="tara-limba" id="selected-flag" src="image/tari/rom.jpg">
+              <div class="selected-language" id="selected-language">
+               Romana
+              </div>
+              <ul>
+                <li>
+                  <a id="ro" onclick="
+                    languageSelector('ro');
+
+                    " value="ro" class="de">
+                    <img class="tara-limba" src="image/tari/rom.jpg">
+                    Romana</a>
+                </li>
+                <li>
+                  <a id="en" onclick="
+                     languageSelector('en');
+                    " value="en" class="en">
+                    <img class="tara-limba" src="image/tari/uk.png">
+                    English</a>
+                </li>
+                <li>
+                  <a class="fr">French</a>
+                </li>
+                <li>
+                  <a class="ae">Arabic</a>
+                </li>
+              </ul>
+              
+            </div>
+            
+
+        </header>
+
+        <main style="height: 100vh; background-image: linear-gradient(
+          to bottom,
+          rgb(36, 54, 101),
+          rgb(47, 154, 204)
+        );
+        ">
+
+          <div style="margin-left:auto ;
+          margin-right: auto; width:80%; margin-top:12rem; text-align: center; padding-bottom: 5rem;" >
+          <h2 style="color: white; text-transform: uppercase; font-size: 36px;" id="faq">Intrebari frecvente<h2>
+          
+          </div>
+
+          <div class="container-faq" style="color: #232323;">
+
+            <div class="container-negare-secundar">
+
+            <div class="container-negare-stanga">
+               
+              <div class="item-mit" id="mit1" onclick="
+             schimbareF1();
+             
+              ">
+                 <div class="mit-stanga">
+                  <img src="image/office-suitcase-svgrepo-com.svg">
+                  <p>Cum pot colabora cu agenția voastră pentru recrutarea de personal?</p>
+                </div>  
+                <div class="mit-dreapta">
+                  <img src="image/right-arrow-svgrepo-com (2).svg">
+                  </div> 
+                </div>
+
+                <div class="item-mit" id="mit2" onclick="
+                schimbareF2();
+               
+                ">
+                  <div class="mit-stanga">
+                    <img src="image/office-suitcase-svgrepo-com.svg">
+                    <p id="intrebare2">Ce tipuri de personal puteți recruta pentru compania mea?</p>
+                  </div>  
+                  <div class="mit-dreapta">
+                    <img src="image/right-arrow-svgrepo-com (2).svg">
+                    </div> 
+                </div>
+
+                <div class="item-mit" id="mit3" onclick="
+               schimbareF3();
+                ">
+                  <div class="mit-stanga">
+                    <img src="image/office-suitcase-svgrepo-com.svg">
+                    <p id="intrebare3">Care este procesul de recrutare prin agenția voastră?</p>
+                  </div>  
+                  <div class="mit-dreapta">
+                    <img src="image/right-arrow-svgrepo-com (2).svg">
+                    </div> 
+                </div>
+
+                <div class="item-mit" id="mit4"  onclick="
+                schimbareF4();
+                ">
+                  <div class="mit-stanga">
+                    <img src="image/office-suitcase-svgrepo-com.svg">
+                    <p id="intrebare4">Care sunt costurile asociate serviciilor de recrutare?</p>
+                  </div>  
+                  <div class="mit-dreapta">
+                    <img src="image/right-arrow-svgrepo-com (2).svg">
+                    </div> 
+                </div>
+
+
+            </div>
+
+            <div class="container-negare-dreapta">
+              <div class="container-scris-negare">
+
+                <h2 id="titlu-container-negare" class="titlu-negare">Cum pot colabora cu agenția voastră pentru recrutarea de personal?</h2>
+                <p id="paragraf-container-negare">Pentru a colabora cu noi, completați formularul de contact de pe site-ul nostru sau sunați-ne direct. Un consultant vă va contacta pentru a discuta nevoile dumneavoastră de recrutare și pentru a stabili detaliile colaborării.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          </div>
+        
+        </main>
+
+        <script src="navbar.js"></script>
+
+<footer>
+
+
+  
+    <div class="footerContainer">
+    
+    <div class="informatii-footer">
+  
+      <div class="information-loc">
+        <img src="img/phone.png" class="icon" alt="" />
+        <p>+40 749 187 777</p>
+    </div>
+  
+      <div class="information-loc">
+        <img src="img/location.png" class="icon" alt="" />
+        <p>Strada Ștefan Mihăileanu, nr 28C, Sector 2, București, România</p>
+      </div>
+    
+      </div>
+    
+      <div class="socialIcons">
+
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-whatsapp"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-tiktok"></i></a>
+      
+    
+      </div>
+    
+      <div class="footerNav">
+    
+        <ul>
+          <li><a href="faq.html" >Intrebari frecvente</a></li>
+          <li><a href="termeni.html" >Termeni si conditii</a></li>
+          <li><a href="confidentialitate.html" >Confidentialitate</a> </li>
+          <!-- <li><a href="cere-o-oferta.html" >Cere o ofertă!</a>
+          <li><a href="contact.html">Contact</a></li> -->
+    
+        </ul>
+    
+        
+    
+      </div>
+    
+      
+    
+    </div>
+    
+    
+    <div class="footerBottom">
+      <p>Copyright © CMD External Group. All rights reserved.</p>
+    
+    </div>
+    
+    
+    </footer>
+    <script src="script.js"></script>
+    <script src="navbar.js"></script>
+    <script src="language-faq.js"></script>
+
+    <script>
+      function schimbareF1() {
+        if(language == "ro"){
+          document.getElementById("titlu-container-negare").textContent = 'Cum pot colabora cu agenția voastră pentru recrutarea de personal?';
+          document.getElementById("paragraf-container-negare").textContent = "Pentru a colabora cu noi, completați formularul de contact de pe site-ul nostru sau sunați-ne direct. Un consultant vă va contacta pentru a discuta nevoile dumneavoastră de recrutare și pentru a stabili detaliile colaborării.";
+        }
+        if(language == "en"){
+          document.getElementById("titlu-container-negare").textContent = 'Question 1';
+          document.getElementById("paragraf-container-negare").textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti suscipit atque dolorem alias nisi!";
+        }
+
+        document.getElementById("mit1").style.backgroundColor="white";
+        document.getElementById("mit1").style.color="#243665";
+        document.getElementById("mit2").style.backgroundColor="transparent";
+        document.getElementById("mit3").style.backgroundColor="transparent";
+        document.getElementById("mit4").style.backgroundColor="transparent";
+        document.getElementById("mit2").style.color="black";
+        document.getElementById("mit3").style.color="black";
+        document.getElementById("mit4").style.color="black";
+
+      }
+
+      function schimbareF2() {
+        if(language == "ro"){
+          document.getElementById("titlu-container-negare").textContent = "Ce tipuri de personal puteți recruta pentru compania mea?";
+          document.getElementById("paragraf-container-negare").textContent = "Putem recruta personal pentru diverse domenii, precum construcții, fabrici, FMCG, HoReCa, agricultură, ferme, menaj, babysitting, ajutor la domiciliu, curierat, reciclare & salubritate, șantiere navale.";
+        }
+        if(language == "en"){
+          document.getElementById("titlu-container-negare").textContent = "Question 2";
+          document.getElementById("paragraf-container-negare").textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti suscipit atque dolorem alias nisi!";
+        }
+
+        document.getElementById("mit2").style.backgroundColor="white";
+        document.getElementById("mit2").style.color="#243665";
+        document.getElementById("mit1").style.backgroundColor="transparent";
+        document.getElementById("mit3").style.backgroundColor="transparent";
+        document.getElementById("mit4").style.backgroundColor="transparent";
+        document.getElementById("mit1").style.color="black";
+        document.getElementById("mit3").style.color="black";
+        document.getElementById("mit4").style.color="black";
+
+      }
+
+      function schimbareF3() {
+        if(language == "ro"){
+          document.getElementById("titlu-container-negare").textContent = "Care este procesul de recrutare prin agenția voastră?";
+          document.getElementById("paragraf-container-negare").textContent = "Procesul nostru de recrutare include obținerea cererii de la angajator și promovarea joburilor în țările agreate, urmând selectarea angajaților și obținerea vizelor necesare. Asigurăm startul contractului prin semnarea acestuia de către angajați și obținerea avizului de muncă. După sosirea angajaților la locul de muncă, menținem o comunicare constantă cu angajatorul pentru a asigura calitatea muncii.";
+        }
+        if(language == "en"){
+          document.getElementById("titlu-container-negare").textContent = "Question 3";
+          document.getElementById("paragraf-container-negare").textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti suscipit atque dolorem alias nisi!";
+        }
+
+        document.getElementById("mit3").style.backgroundColor="white";
+        document.getElementById("mit3").style.color="#243665";
+        document.getElementById("mit1").style.backgroundColor="transparent";
+        document.getElementById("mit2").style.backgroundColor="transparent";
+        document.getElementById("mit4").style.backgroundColor="transparent";
+        document.getElementById("mit2").style.color="black";
+        document.getElementById("mit1").style.color="black";
+        document.getElementById("mit4").style.color="black";
+      }
+
+
+      function schimbareF4() {
+        if(language == "ro"){
+          document.getElementById("titlu-container-negare").textContent = "Care sunt costurile asociate serviciilor de recrutare?";
+          document.getElementById("paragraf-container-negare").textContent = "Oferim tarife competitive. Contactați-ne prin formularul de contact sau telefonic pentru a primi o ofertă personalizată! ";
+        }
+        if(language == "en"){
+          document.getElementById("titlu-container-negare").textContent = "Question 4";
+          document.getElementById("paragraf-container-negare").textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti suscipit atque dolorem alias nisi!";
+        }
+
+        document.getElementById("mit4").style.backgroundColor="white";
+        document.getElementById("mit4").style.color="#243665";
+        document.getElementById("mit1").style.backgroundColor="transparent";
+        document.getElementById("mit3").style.backgroundColor="transparent";
+        document.getElementById("mit2").style.backgroundColor="transparent";
+        document.getElementById("mit2").style.color="black";
+        document.getElementById("mit3").style.color="black";
+        document.getElementById("mit1").style.color="black";
+
+      }
+
+    </script>
+ 
+</body>
+
+</html>
